@@ -1,0 +1,19 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>NUMBER CLASH</title><link rel="stylesheet" href="style.css"></head><body>
+<header><b>NUMBER CLASH</b><button id="snd" class="btn sm" aria-label="Toggle sound">🔊 ON</button></header>
+<main>
+<section id="home"><h1>NUMBER<br><span>CLASH</span></h1><p class="sub">THINK FAST. TYPE FASTER. DESTROY YOUR FRIENDS.</p>
+<div class="vs" aria-hidden="true"><div class="card y">🥷<br>47</div><b>+</b><div class="card p">🤖<br>82</div></div>
+<button class="btn big b" data-act="mk">CREATE ROOM</button><button class="btn big g" data-act="jn">JOIN ROOM</button>
+<div class="card how"><h2>HOW TO PLAY</h2><ol><li>Create or join a room.</li><li>Both players choose a number.</li><li>Numbers are revealed.</li><li>Race to solve the addition.</li><li>First correct answer wins.</li><li>Repeat until someone wins the match.</li></ol></div></section>
+<section id="form" hidden><h2 id="ft"></h2><div class="card"><label>NICKNAME<input id="nick" maxlength="12" autocomplete="off" placeholder="SHADOW"></label>
+<div id="avs" class="avs" role="radiogroup" aria-label="Avatar"></div>
+<label id="cl">ROOM CODE<input id="code" maxlength="5" autocomplete="off" placeholder="ENTER ROOM CODE"></label>
+<p id="err" class="err" role="alert"></p><button class="btn big y" data-act="go" id="gob">GO</button><button class="btn" data-act="home">BACK</button></div></section>
+<section id="lobby" hidden></section>
+<section id="game" hidden><div id="sb" class="card"></div><div id="banner"></div><div id="stage"></div></section>
+<section id="end" hidden></section>
+</main>
+<div id="react" hidden></div><div id="float" aria-hidden="true"></div><div id="toast" role="status" aria-live="polite"></div>
+<script src="/socket.io/socket.io.js"></script><script src="app.js"></script></body></html>
